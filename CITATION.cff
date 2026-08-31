@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this evaluation, please cite the paper."
+title: "Sycophancy Suppression Can Impair Rational Updating: Anti-Sycophancy Should Preserve the Ability to Update"
+authors:
+  - family-names: Ma
+    given-names: Huanhuan
+  - family-names: Zou
+    given-names: Henry Peng
+  - family-names: Li
+    given-names: Chengze
+  - family-names: Ma
+    given-names: Enze
+  - family-names: Su
+    given-names: Yunyue
+  - family-names: Yu
+    given-names: Philip S.
+url: "https://arxiv.org/abs/2608.26511"
+repository-code: "https://github.com/dependentsign/sycophancy-rational-updating"
+preferred-citation:
+  type: article
+  title: "Sycophancy Suppression Can Impair Rational Updating: Anti-Sycophancy Should Preserve the Ability to Update"
+  year: 2026
+  url: "https://arxiv.org/abs/2608.26511"
+  identifiers:
+    - type: url
+      value: "https://arxiv.org/abs/2608.26511"
+      description: "arXiv:2608.26511"
+  authors:
+    - family-names: Ma
+      given-names: Huanhuan
+    - family-names: Zou
+      given-names: Henry Peng
+    - family-names: Li
+      given-names: Chengze
+    - family-names: Ma
+      given-names: Enze
+    - family-names: Su
+      given-names: Yunyue
+    - family-names: Yu
+      given-names: Philip S.

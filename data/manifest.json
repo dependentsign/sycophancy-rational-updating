@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "release": "emnlp-2026-camera-ready",
+  "description": "Immutable benchmark inputs and paper calibration/test assignments.",
+  "datasets": {
+    "truthfulqa": {
+      "data_file": "truthfulqa.jsonl",
+      "data_sha256": "b0bf7f1e82ebd5d83f78d80e0d055c52b22c94d2ae1601245fa3ec00fac45755",
+      "split_file": "splits/truthfulqa.json",
+      "split_sha256": "85310baabc07724ad3e4364814b4626a70b19ec7c91cd2af26021fc3b790923d",
+      "rows": 604,
+      "calibration": 484,
+      "test": 120,
+      "upstream": "https://github.com/sylinrl/TruthfulQA",
+      "upstream_revision": "d71c110897f5d31c5d7f309e7bc316c152f6f031",
+      "upstream_files": {
+        "TruthfulQA.csv": "b8d8ef1e12f98b4f2a9f47abc9765da0640b182b6c5d9b92f0c1a1f2f1e02e5c",
+        "data/mc_task.json": "c90d853454fd48c676accb33e16923ac438dbb6fb37ecc7c6a70e33c9e556e87"
+      },
+      "notes": "Reference notes written from the Wikipedia pages TruthfulQA cites, with the supporting quotes attached to each row."
+    },
+    "popqa": {
+      "data_file": "popqa.jsonl",
+      "data_sha256": "072d6a4960d51ac2aaa5d0b2bba28d77fa2b3b206e771da5a9ac03d289657d75",
+      "split_file": "splits/popqa.json",
+      "split_sha256": "63a79075e793decd5e3b06789a4f3f466d6ff1d0106e230b63a28b1c1b8b895c",
+      "rows": 2000,
+      "calibration": 1000,
+      "test": 1000,
+      "upstream": "https://github.com/AlexTMallen/adaptive-retrieval",
+      "upstream_revision": "8172ab04794a1651488207c230286b0b3786d736",
+      "upstream_files": {
+        "data/popQA.tsv": "9a5227f41bff0e4c331d4a774d946b12f95307892b58f860a9606ef356e6089b"
+      },
+      "notes": "Subject-page Wikipedia evidence, filtered so that all but five rows state the gold answer; the matched string is recorded per row."
+    },
+    "exfever": {
+      "data_file": "exfever.jsonl",
+      "data_sha256": "b584797d46b7b807891a433b5879b647841aa85e9654692c92de4943796c9fd7",
+      "split_file": "splits/exfever.json",
+      "split_sha256": "352ff9b0ccf412c57b925ab4ad86536fcb02e04bb4f1f957efb7078f544ff58b",
+      "rows": 2000,
+      "calibration": 1000,
+      "test": 1000,
+      "upstream": "https://github.com/dependentsign/EX-FEVER",
+      "upstream_revision": "ec059bf32ce981aa66830083c34377ad44346b4d",
+      "upstream_files": {
+        "data/test.csv": "7b172195801a934a24ce0c050ab0a006670a398c7f638f47ffca6cc7bcb81140"
+      },
+      "notes": "Exact SUPPORT/REFUTE qids selected from the filtered EX-FEVER test release; explanations are the evidence field."
+    },
+    "aqua": {
+      "data_file": "aqua.jsonl",
+      "data_sha256": "c87f2eb2bf77eb717da379dce03891dd97c33b1295a94d9e4103aa37a766e89e",
+      "split_file": "splits/aqua.json",
+      "split_sha256": "9424d64952d7801fc62e1f6740459f524d611326dd1f0f510d9fe1b2e463ec19",
+      "rows": 501,
+      "calibration": 254,
+      "test": 247,
+      "upstream": "https://github.com/google-deepmind/AQuA",
+      "upstream_revision": "26b64ed1f22208c6742f47df547dfd65088ec30d",
+      "upstream_files": {
+        "dev.json": "4a52301d8a49ae0b286f8e697f9c5da1b109b247b825b47b4c6de34312dceec5",
+        "test.json": "de41581881ef95c5588c44ddc701c77fd480839241dd422a0d181262af24520c"
+      },
+      "notes": "Calibration is the 254-row validation release with qids offset by 1000; test is the 247 schema-valid rows from the 254-row test release."
+    }
+  }
+}

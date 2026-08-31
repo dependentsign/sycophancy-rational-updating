@@ -1,0 +1,14 @@
+# Everything needed to evaluate both local and hosted models.
+# For a lighter install, use the extras in pyproject.toml:
+#   pip install -e ".[hf]"    local weights only
+#   pip install -e ".[api]"   hosted models only
+tqdm>=4.66
+
+# Local weights
+torch>=2.1
+transformers>=4.51
+accelerate>=0.26
+
+# Hosted models and OpenAI-compatible servers
+openai>=1.40
+anthropic>=0.40
